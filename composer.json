@@ -1,13 +1,25 @@
 {
     "name": "phpoffice/phpexcel",
-    "description": "clone of PHPExcel and updated to work with PHP 8.0",
-    "keywords": ["PHP", "Excel", "OpenXML", "xlsx", "xls", "spreadsheet"],
-    "homepage": "https://github.com/jamalludin02/phpexcel",
+    "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+    "keywords": ["PHP","Excel","OpenXML","xlsx","xls","spreadsheet"],
+    "homepage": "https://github.com/PHPOffice/PHPExcel",
     "type": "library",
     "license": "LGPL-2.1",
     "authors": [
         {
-            "name": "jhamal"
+            "name": "Maarten Balliauw",
+            "homepage": "http://blog.maartenballiauw.be"
+        },
+        {
+            "name": "Mark Baker",
+            "homepage": "http://markbakeruk.net"
+        },
+        {
+            "name": "Franck Lefevre",
+            "homepage": "http://rootslabs.net"
+        },
+        {
+            "name": "Erik Tilt"
         }
     ],
     "require": {
@@ -15,6 +27,13 @@
         "ext-mbstring": "*",
         "ext-xml": "*",
         "ext-xmlwriter": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "recommend": {
+        "ext-zip": "*",
+        "ext-gd": "*"
     },
     "autoload": {
         "psr-4": {
