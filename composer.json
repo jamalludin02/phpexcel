@@ -17,10 +17,10 @@
             "name": "jhamal"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": "^8.0",
+        "php": ">=8.0",
         "ext-mbstring": "*",
         "ext-xml": "*",
         "ext-xmlwriter": "*"
@@ -36,6 +36,10 @@
         "psr-4": {
             "PhpOffice\\PhpExcel\\": "src/"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [],
+        "post-update-cmd": []
     },
     "config": {
         "platform-check": false
