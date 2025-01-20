@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PHPExcel\\": "Classes/"
+            "PhpOffice\\PhpExcel\\": "src/"
         }
     },
     "config": {
