@@ -1,16 +1,7 @@
 {
-    "name": "jhml/phpexcel",
+    "name": "phpoffice/phpexcel",
     "description": "clone of PHPExcel and updated to work with PHP 8.0",
-    "keywords": [
-        "PHP",
-        "Excel",
-        "OpenXML",
-        "xlsx",
-        "xls",
-        "spreadsheet"
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "keywords": ["PHP", "Excel", "OpenXML", "xlsx", "xls", "spreadsheet"],
     "homepage": "https://github.com/jamalludin02/phpexcel",
     "type": "library",
     "license": "LGPL-2.1",
@@ -25,19 +16,9 @@
         "ext-xml": "*",
         "ext-xmlwriter": "*"
     },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "2.*"
-    },
-    "recommend": {
-        "ext-zip": "*",
-        "ext-gd": "*"
-    },
     "autoload": {
-        "psr-0": {
-            "PHPExcel": "Classes/"
-        },
         "psr-4": {
-            "PhpOffice\\PhpExcel\\": "Classes/"
+            "PhpOffice\\PhpExcel\\": "src/"
         }
     }
 }
