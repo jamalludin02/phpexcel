@@ -369,7 +369,7 @@ class PHPExcel_Reader_Excel2003XML extends PHPExcel_Reader_Abstract implements P
         if (isset($xml->CustomDocumentProperties)) {
             foreach ($xml->CustomDocumentProperties[0] as $propertyName => $propertyValue) {
                 $propertyAttributes = $propertyValue->attributes($namespaces['dt']);
-                $propertyName = preg_replace_callback('/_x([0-9a-z][4])_/', 'PHPExcel_Reader_Excel2003XML::hex2str', $propertyName);
+                $propertyName = preg_replace_callback('/_x([0-9a-z]{4})_/', 'PHPExcel_Reader_Excel2003XML::hex2str', $propertyName);
                 $propertyType = PHPExcel_DocumentProperties::PROPERTY_TYPE_UNKNOWN;
                 switch ((string) $propertyAttributes) {
                     case 'string':
