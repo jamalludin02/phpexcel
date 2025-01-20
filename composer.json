@@ -1,5 +1,5 @@
 {
-    "name": "jhml/phpexcel",
+    "name": "PhpOffice/phpexcel",
     "description": "clone of PHPExcel and updated to work with PHP 8.0",
     "keywords": [
         "PHP",
