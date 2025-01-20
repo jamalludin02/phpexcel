@@ -1,8 +1,15 @@
 {
-    "name": "phpoffice/phpexcel",
-    "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-    "keywords": ["PHP","Excel","OpenXML","xlsx","xls","spreadsheet"],
-    "homepage": "https://github.com/PHPOffice/PHPExcel",
+    "name": "deka/phpexcel",
+    "description": "clone of PHPExcel and updated to work with PHP 8.0",
+    "keywords": [
+        "PHP",
+        "Excel",
+        "OpenXML",
+        "xlsx",
+        "xls",
+        "spreadsheet"
+    ],
+    "homepage": "https://github.com/jamalludin02/phpexcel",
     "type": "library",
     "license": "LGPL-2.1",
     "authors": [
@@ -20,10 +27,13 @@
         },
         {
             "name": "Erik Tilt"
+        },
+        {
+            "name": "jhamal"
         }
     ],
     "require": {
-        "php": "^5.2|^7.0",
+        "php": "^5.2|^7.0|^8.0|^8.2",
         "ext-mbstring": "*",
         "ext-xml": "*",
         "ext-xmlwriter": "*"
@@ -38,6 +48,9 @@
     "autoload": {
         "psr-0": {
             "PHPExcel": "Classes/"
+        },
+        "psr-4": {
+            "PhpOffice\\PhpExcel\\": "Classes/"
         }
     }
 }
